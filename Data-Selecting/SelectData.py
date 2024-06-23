@@ -7,6 +7,7 @@ data = {
 }
 df = pd.DataFrame(data)
 # print(df)
+
 def selectData(students:pd.DataFrame)->pd.DataFrame:
     return students.loc[students['student_id']==101,['name','age']]
 print(selectData(df))

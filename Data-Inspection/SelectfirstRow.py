@@ -8,6 +8,7 @@ data = {
 }
 df = pd.DataFrame(data)
 # print(df)
+
 def selectFirstrow(employees:pd.DataFrame)->pd.DataFrame:
     return employees.head(3)
 print(selectFirstrow(df))
