@@ -8,5 +8,6 @@ df = pd.DataFrame(data)
 # print(df)
 def createBonusColumn(employees:pd.DataFrame)->pd.DataFrame:
     employees['bonus'] = employees['salary'] * 2
+    # employees = employees.assign(bonus=employees['salary']*2)
     return employees
 print(createBonusColumn(df))
